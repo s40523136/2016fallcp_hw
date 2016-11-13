@@ -1,8 +1,7 @@
 '''
-mystring = "s40523136"
+mystring = "s40523130"
 print(mystring)
 '''
-
 thetext = input("Enter some text ")
-print ("This is what you entered:", "test", sep="---")
+print ("This is what you entered:")
 print (thetext)
