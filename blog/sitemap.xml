@@ -5,42 +5,49 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2016-11-14T22:27:03-00:00</lastmod>
+<lastmod>2016-11-18T16:02:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2016-11-14T22:27:03-00:00</lastmod>
+<lastmod>2016-11-18T16:02:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2016-11-14T22:27:03-00:00</lastmod>
+<lastmod>2016-11-18T16:02:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2016-11-14T22:27:03-00:00</lastmod>
+<lastmod>2016-11-18T16:02:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2016-11-14T21:31:35+08:00</lastmod>
+<lastmod>2016-11-18T13:28:33+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./w10-brython-hui-tu-fan-li.html</loc>
+<lastmod>2016-11-14T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./2016fall-qi-zhong-lian-xi-ti.html</loc>
-<lastmod>2016-10-25T12:00:00+08:00</lastmod>
+<lastmod>2016-10-26T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -74,8 +81,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./category/course.html</loc>
+<lastmod>2016-11-14T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./category/jiao-xue-ying-pian.html</loc>
-<lastmod>2016-10-25T12:00:00+08:06</lastmod>
+<lastmod>2016-10-26T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/brython.html</loc>
+<lastmod>2016-11-14T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -83,6 +104,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./tag/jin-duan-zi-liao.html</loc>
 <lastmod>2016-10-20T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/sharex.html</loc>
+<lastmod>2016-10-26T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -102,15 +130,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/sharex.html</loc>
-<lastmod>2016-10-25T12:00:00+08:06</lastmod>
+<loc>./author/huang-yin-wei.html</loc>
+<lastmod>2016-10-26T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./author/huang-yin-wei.html</loc>
-<lastmod>2016-10-25T12:00:00+08:06</lastmod>
+<loc>./author/yen.html</loc>
+<lastmod>2016-11-14T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

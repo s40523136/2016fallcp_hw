@@ -106,6 +106,7 @@
 <v t="leo.20161114214937.1"><vh>@edit 20161111.md</vh></v>
 <v t="leo.20161114215222.1"><vh>@edit 20161112.md</vh></v>
 <v t="leo.20161114222557.1"><vh>@edit 2016 1113.md</vh></v>
+<v t="leo.20161118141012.1"><vh>@edit 2016 1114.md</vh></v>
 </v>
 </v>
 <v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
@@ -123,6 +124,13 @@
 <v t="leo.20161112212346.6"><vh>old:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
 <v t="leo.20161112212346.7"><vh>new:&lt;&lt; 投影片標題 &gt;&gt;</vh></v>
 </v>
+</v>
+<v t="leo.20161118133442.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161118133442.3"><vh>Recovered node "HTML 投影片 (標題)" from @clean index.html</vh>
+<v t="leo.20161118133442.4"><vh>old:HTML 投影片 (標題)</vh></v>
+<v t="leo.20161118133442.5"><vh>new:HTML 投影片 (標題)</vh></v>
+</v>
+<v t="leo.20161118140421.1"><vh>@button https server</vh></v>
 </v>
 </vnodes>
 <tnodes>
@@ -357,7 +365,7 @@ apply broader style changes, like switching the page background.
 
 </t>
 <t tx="amd.20161004083800.8">&lt;section&gt;
-    &lt;h1&gt;2016Fall CPA 40523130 黃胤瑋&lt;/h1&gt;
+    &lt;h1&gt;2016Fall CPA 40523136 黃胤瑋&lt;/h1&gt;
     &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
     &lt;p&gt;
     &lt;small&gt;
@@ -860,7 +868,8 @@ Diff...
 &lt;a href="https://vimeo.com/user58912621"&gt;黃胤瑋&lt;/a&gt; on 
 &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;
 &lt;/p&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20161113210906.1">&lt;section&gt;
     &lt;h2&gt;2016-10-15_22-28-45&lt;/h2&gt;
     &lt;iframe src="https://player.vimeo.com/video/190994134" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
@@ -869,7 +878,8 @@ Diff...
 &lt;a href="https://vimeo.com/user58912621"&gt;黃胤瑋&lt;/a&gt; on 
 &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;
 &lt;/p&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20161113211238.1">&lt;section&gt;
     &lt;h2&gt;2016-10-30_22-28-45&lt;/h2&gt;
 &lt;iframe src="https://player.vimeo.com/video/190994795" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
@@ -878,7 +888,8 @@ Diff...
  on 
  &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;
  &lt;/p&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20161113211238.2">&lt;section&gt;
     &lt;h2&gt;2016-11-10_22-28-45&lt;/h2&gt;
 &lt;iframe src="https://player.vimeo.com/video/190995648" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
@@ -887,7 +898,93 @@ Diff...
 on
  &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;
  &lt;/p&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20161113211239.1"></t>
+<t tx="leo.20161118133442.2"></t>
+<t tx="leo.20161118133442.3">(uncached) amd.20161004083800.8
+Diff...
+  &lt;section&gt;
+-     &lt;h1&gt;2016Fall CPA 40523136 黃胤瑋&lt;/h1&gt;
+?                             ^
++     &lt;h1&gt;2016Fall CPA 40523130 黃胤瑋&lt;/h1&gt;
+?                             ^
+      &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+      &lt;p&gt;
+      &lt;small&gt;
+      Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+      &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+      &lt;/small&gt;
+      &lt;/p&gt;
+      &lt;/p&gt;
+      &lt;a href="https://github.com/s40523136/2016fallcp_hw/"&gt;wiki&lt;/a&gt; 
+      &lt;/p&gt;
+  
+  
+      &lt;a href="https://vimeo.com/user58912621"&gt;Vimeo&lt;/a&gt;
+      &lt;/p&gt;
+      &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+  &lt;/section&gt;
+</t>
+<t tx="leo.20161118133442.4">&lt;section&gt;
+    &lt;h1&gt;2016Fall CPA 40523130 黃胤瑋&lt;/h1&gt;
+    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+    &lt;p&gt;
+    &lt;small&gt;
+    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;/p&gt;
+    &lt;/p&gt;
+    &lt;a href="https://github.com/s40523136/2016fallcp_hw/"&gt;wiki&lt;/a&gt; 
+    &lt;/p&gt;
+
+
+    &lt;a href="https://vimeo.com/user58912621"&gt;Vimeo&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161118133442.5">&lt;section&gt;
+    &lt;h1&gt;2016Fall CPA 40523136 黃胤瑋&lt;/h1&gt;
+    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+    &lt;p&gt;
+    &lt;small&gt;
+    Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; / 
+    &lt;a href="http://twitter.com/hakimel"&gt;@hakimel&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;/p&gt;
+    &lt;/p&gt;
+    &lt;a href="https://github.com/s40523136/2016fallcp_hw/"&gt;wiki&lt;/a&gt; 
+    &lt;/p&gt;
+
+
+    &lt;a href="https://vimeo.com/user58912621"&gt;Vimeo&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20161118140421.1">@language python
+import os
+import subprocess
+import threading
+import http.server, ssl
+
+def domake():
+    # build directory
+    os.chdir("./../")
+    server_address = ('localhost', 6443)
+    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("6443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
 </tnodes>
 </leo_file>
