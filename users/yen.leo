@@ -107,6 +107,8 @@
 <v t="leo.20161114215222.1"><vh>@edit 20161112.md</vh></v>
 <v t="leo.20161114222557.1"><vh>@edit 2016 1113.md</vh></v>
 <v t="leo.20161118141012.1"><vh>@edit 2016 1114.md</vh></v>
+<v t="leo.20161202141452.1"><vh>@edit 2016 1115.md</vh></v>
+<v t="leo.20161202145740.1"><vh>newHeadline</vh></v>
 </v>
 </v>
 <v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
@@ -973,7 +975,7 @@ import http.server, ssl
 def domake():
     # build directory
     os.chdir("./../")
-    server_address = ('localhost', 6443)
+    server_address = ('localhost', 7443)
     httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
     httpd.socket = ssl.wrap_socket(httpd.socket,
                                    server_side=True,
@@ -986,5 +988,6 @@ def domake():
 # 利用執行緒執行 https 伺服器
 make = threading.Thread(target=domake)
 make.start()</t>
+<t tx="leo.20161202145740.1"></t>
 </tnodes>
 </leo_file>
