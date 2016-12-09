@@ -108,6 +108,8 @@
 <v t="leo.20161114222557.1"><vh>@edit 2016 1113.md</vh></v>
 <v t="leo.20161118141012.1"><vh>@edit 2016 1114.md</vh></v>
 <v t="leo.20161202141452.1"><vh>@edit 2016 1115.md</vh></v>
+<v t="leo.20161209140939.1"><vh>@edit 2016 1209.md</vh></v>
+<v t="leo.20161209153350.1"><vh>@edit 2016 1209-1.md</vh></v>
 <v t="leo.20161202145740.1"><vh>newHeadline</vh></v>
 </v>
 </v>
@@ -133,6 +135,7 @@
 <v t="leo.20161118133442.5"><vh>new:HTML 投影片 (標題)</vh></v>
 </v>
 <v t="leo.20161118140421.1"><vh>@button https server</vh></v>
+<v t="leo.20161209143338.1"><vh>@button ipv6 https server</vh></v>
 </v>
 </vnodes>
 <tnodes>
@@ -975,7 +978,7 @@ import http.server, ssl
 def domake():
     # build directory
     os.chdir("./../")
-    server_address = ('localhost', 7443)
+    server_address = ('192.168.1.32', 6443)
     httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
     httpd.socket = ssl.wrap_socket(httpd.socket,
                                    server_side=True,
@@ -989,5 +992,33 @@ def domake():
 make = threading.Thread(target=domake)
 make.start()</t>
 <t tx="leo.20161202145740.1"></t>
+<t tx="leo.20161209143338.1">@language python
+import os
+import subprocess
+import threading
+import socket
+import http.server, ssl
+
+class HTTPServerV6(http.server.HTTPServer):
+    address_family = socket.AF_INET6
+  
+def domake():
+    # build directory
+    os.chdir("./../")
+    ipv6_address = '2001:288:6004:17:3004::808'
+    server_address = (ipv6_address, 6443)
+    #httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd = HTTPServerV6(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("6443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
 </tnodes>
 </leo_file>
