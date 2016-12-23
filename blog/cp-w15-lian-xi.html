@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>2016Fall 課程網誌 (虎尾科大MDE)</title>
+    <title>CP W15 練習 - 2016Fall 課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,15 +166,21 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href=".">
-        <meta name="author" content="KMOL" />
+<link rel="canonical" href="./cp-w15-lian-xi.html">
 
-    <!-- Open Graph tags -->
+        <meta name="author" content="黃胤瑋" />
+        <meta name="keywords" content="Brython" />
+        <meta name="description" content="window.onload=function(){ brython(1); } from browser import document as do from browser import html c = do[&#34;con&#34;] def compa(e): your_input = input(&#34;請輸入一個整數!&#34;) # 如何判斷所輸入的整數比 10 大 if int(your_input) &gt; 10: c" />
+
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="2016Fall 課程網誌 (虎尾科大MDE)"/>
-        <meta property="og:url" content="."/>
-        <meta property="og:description" content="2016Fall 課程網誌 (虎尾科大MDE)"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="CP W15 練習"/>
+        <meta property="og:url" content="./cp-w15-lian-xi.html"/>
+        <meta property="og:description" content="window.onload=function(){ brython(1); } from browser import document as do from browser import html c = do[&#34;con&#34;] def compa(e): your_input = input(&#34;請輸入一個整數!&#34;) # 如何判斷所輸入的整數比 10 大 if int(your_input) &gt; 10: c"/>
+        <meta property="article:published_time" content="2016-12-23" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="Brython" />
+            <meta property="article:author" content="黃胤瑋" />
 
 
     <!-- Bootstrap -->
@@ -255,7 +261,7 @@ init_mathjax();
                          <li><a href="./pages/about/">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="./category/course.html">Course</a>
                         </li>
                         <li >
@@ -280,9 +286,36 @@ init_mathjax();
     <div class="row">
         <div class="col-sm-9">
 
-            <article>
-                <h2><a href="./cp-w15-lian-xi.html">CP W15 練習</a></h2>
-                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./cp-w15-lian-xi.html"
+                       rel="bookmark"
+                       title="Permalink to CP W15 練習">
+                        CP W15 練習
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-12-23T12:00:00+08:00"> 週五 23 十二月 2016</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/huang-yin-wei.html"><i class="fa fa-user"></i> 黃胤瑋</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/brython.html">Brython</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <!-- 導入 Brython 標準程式庫 -->
 
 <script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
@@ -309,159 +342,49 @@ def compa(e):
     # 如何判斷所輸入的整數比 10 大
 
     if int(your_input) > 10:
-        c <= "所輸入的整數:" + your_input ...</script></!--></!--></!-->
-                    <a class="btn btn-default btn-xs" href="./cp-w15-lian-xi.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./cp-w14-lian-xi.html">CP W14 練習</a></h2>
-                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
+        c <= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
+    else:
+        c <= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
 
-<script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
-</script>
-
-<!-- 啟動 Brython -->
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<!-- ch01 基本的列印與輸入函式 -->
-
-<script type="text/python3">
-from browser import document
-from browser import alert
-
+#print("test")
 '''
-    # 利用 input() 取得使用者輸入, 然後進行資料處理或運算後, 列出結果
-    #01-01.py
-    print ("Hello World!")
-    #01-02.py
-    thetext = input("Enter some text ")
-    print ("This is what ...</script></!--></!--></!-->
-                    <a class="btn btn-default btn-xs" href="./cp-w14-lian-xi.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./w13-lian-xi-1.html">W13  練習-1</a></h2>
-                <div class="summary"><p>將<a herf="http://mde.tw/2016fallcp/course/Python3Programs.txt">
-http://mde.tw/2016fallcp/course/Python3Programs.txt</a> 整理成brython</p>
+for i in range(5):
+    c <= "test" + html.BR()
+'''
+do["b1"].bind("click", compa)
+</script>
 
-                    <a class="btn btn-default btn-xs" href="./w13-lian-xi-1.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./w13-lian-xi-2.html">W13  練習-2</a></h2>
-                <div class="summary"><p>將<a herf="http://mde.tw/2016fallcp/course/Python3Programs.txt">
-http://mde.tw/2016fallcp/course/Python3Programs.txt</a> 整理成brython
-練習:編寫一個可以將適用者輸入的攝氏溫度,轉為華氏溫度</p>
+<p><button id="b1">compa</button></p>
 
-                    <a class="btn btn-default btn-xs" href="./w13-lian-xi-2.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./w12-brython-hui-tu-lian-xi.html">W12 Brython 繪圖練習</a></h2>
-                <div class="summary"><p>Brython 繪圖</p>
+<pre class="brush: python">
+<div id="con"></div>
+<script type="text/python3">
+from browser import document as do
+from browser import html
+c = do["con"]
+def compa(e):
+    your_input = input("請輸入一個整數!")
+    # 如何判斷所輸入的整數比 10 大
 
-                    <a class="btn btn-default btn-xs" href="./w12-brython-hui-tu-lian-xi.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./w10-brython-hui-tu-lian-xi.html">W10 Brython 繪圖練習</a></h2>
-                <div class="summary"><p>Brython 繪圖</p>
+    if int(your_input) > 10:
+        c <= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
+    else:
+        c <= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
 
-                    <a class="btn btn-default btn-xs" href="./w10-brython-hui-tu-lian-xi.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./2016fall-qi-zhong-lian-xi-ti.html">2016Fall 期中練習題</a></h2>
-                <div class="summary"><h4>期中練習題</h4>
+#print("test")
+'''
+for i in range(5):
+    c <= "test" + html.BR()
+'''
+do["b1"].bind("click", compa)
+</script>
+<button id="b1">compa</button>
+</pre>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">data3 = open("w6_group.txt").read()
-#data3 = open("w6_list.txt").read()
-#print(data3)
-group = data3.splitlines()
-#print(len(group))
-
-# 希望將分組資料轉為學員數列, 令為變數名稱 result_g
-result_g = []
-# 已經註冊者數列設為 registered
-registered = open("w6_list.txt").read()
-registered = registered.splitlines()
-#print(registered)
-for line in group:
-    # 去除每一行最後的空白成員
-    sline = line.split(",")[:-1]
-   #print(sline)
-    # 再將各組拆成個別組員後, 串成 result_g
-    for ...</pre>
-                    <a class="btn btn-default btn-xs" href="./2016fall-qi-zhong-lian-xi-ti.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./2016fall-sharexji-ben-she-ding.html">2016Fall ShareX基本設定</a></h2>
-                <div class="summary"><section>
-    <h2>2016-11-10_22-28-45</h2>
-<iframe src="https://player.vimeo.com/video/190995648" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p>
-<a href="https://vimeo.com/190995648">如何安裝ShareX及基本設定</a> from <a href="https://vimeo.com/user58912621">黃胤瑋</a> 
-on
- <a href="https://vimeo.com">Vimeo</a>
- </p>
-</section>
-                    <a class="btn btn-default btn-xs" href="./2016fall-sharexji-ben-she-ding.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./2016fall-ru-he-jiang-jin-duan-zi-liao-tui-hui-yuan-duan.html">2016Fall 如何將近端資料推回遠端</a></h2>
-                <div class="summary"><iframe src="https://player.vimeo.com/video/190994795" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<p>
-<a href="https://vimeo.com/190994795">如何把近端資料推回遠端</a> from <a href="https://vimeo.com/user58912621">黃胤瑋</a>
- on 
- <a href="https://vimeo.com">Vimeo</a>
- </p>
-
-</section>
-                    <a class="btn btn-default btn-xs" href="./2016fall-ru-he-jiang-jin-duan-zi-liao-tui-hui-yuan-duan.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./2016fall-ru-he-fen-xiang-ying-pian-zhi-vimeo.html">2016Fall 如何分享影片至vimeo</a></h2>
-                <div class="summary"><iframe src="https://player.vimeo.com/video/190994134" width="640" height="343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<p>
-<a href="https://vimeo.com/190994134">如何分享影片至vimeo</a> from <a href="https://vimeo.com/user58912621">黃胤瑋</a> on 
-<a href="https://vimeo.com">Vimeo</a>
-</p>
-
-</section>
-                    <a class="btn btn-default btn-xs" href="./2016fall-ru-he-fen-xiang-ying-pian-zhi-vimeo.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
-        <ul class="pagination">
-                <li class="prev disabled"><a href="#">&laquo;</a></li>
-                    <li class="active"><a
-                            href="./index.html">1</a></li>
-                    <li class=""><a
-                            href="./index2.html">2</a></li>
-                <li class="next"><a
-                        href="./index2.html">&raquo;</a></li>
-        </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
