@@ -113,7 +113,7 @@
 <v t="leo.20161223132012.1"><vh>@edit 2016 12016.md</vh></v>
 <v t="leo.20161223145147.1"><vh>@edit 2016 1223.md</vh></v>
 <v t="leo.20161230133250.1"><vh>@edit 2016 1231.md</vh></v>
-<v t="leo.20161202145740.1"><vh>newHeadline</vh></v>
+<v t="leo.20161202145740.1"><vh>@edit 2016 1231-2.md</vh></v>
 </v>
 </v>
 <v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
@@ -994,7 +994,6 @@ def domake():
 # 利用執行緒執行 https 伺服器
 make = threading.Thread(target=domake)
 make.start()</t>
-<t tx="leo.20161202145740.1"></t>
 <t tx="leo.20161209143338.1">@language python
 import os
 import subprocess

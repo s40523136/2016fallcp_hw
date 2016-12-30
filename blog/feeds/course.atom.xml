@@ -1,5 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2016-12-30T12:00:00+08:00</updated><entry><title>W16 新年快樂</title><link href="./w16-xin-nian-kuai-le.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-30:./w16-xin-nian-kuai-le.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2016-12-31T12:00:00+08:00</updated><entry><title>W16 新年快樂之小遊戲</title><link href="./w16-xin-nian-kuai-le-zhi-xiao-you-xi.html" rel="alternate"></link><published>2016-12-31T12:00:00+08:00</published><updated>2016-12-31T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-31:./w16-xin-nian-kuai-le-zhi-xiao-you-xi.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
+
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下可以執行  Brython 程式 --&gt;
+
+&lt;div id="id3"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document 
+from browser import html
+id3 = document["id3"]
+import random
+
+def gen_int(e):
+    標準答案 = random.randint(1, 100)
+    你猜的數字 = int(input("請輸入您所猜的整數:"))
+    猜測次數 = 1
+    while 標準答案 != 你猜的數字:
+        if 標準答案 &lt; 你猜的數字:
+            #print("太大了，再猜一次 :)加油")
+            id3 &lt;= "太大了，再猜一次 87"  + html.BR()
+        else:
+            #print("太小了，再猜一次 87")
+            id3 &lt;= "太小了，再猜一次 87" + html.BR()
+        你猜的數字 = int(input("請輸入您所猜的整數:"))
+        猜測次數 += 1
+
+    #print("猜對了！總共猜了", 猜測次數, "次")
+    id3 &lt;= "阿不就好棒棒！真夠笨猜了 " + str(猜測次數) +  " 次"
+document["but1"].bind("click",gen_int)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="but1"&gt;來玩阿&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;以下則利用程式執行猜數字遊戲:&lt;/p&gt;
+&lt;div id="id4"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import html
+import random
+
+id4 = document["id4"]
+def autoguess(ev):
+    執行次數 = 100
+    總猜測次數 = 0
+    for i in range(執行次數):
+        id4 &lt;= "第" + str(i+1) + "次玩:" + html.BR()
+        下限 = 1
+        上限 = 100
+        標準答案 = random.randint(下限, 上限)
+        pc猜的數字 = random.randint(下限, 上限)
+        #print(標準答案, pc猜的數字)
+        #integer int()
+        #string str()
+        #float float()
+        #你猜的數字 = int(input("請輸入您所猜的整數:"))
+        猜測次數 = 1
+        while 標準答案 != pc猜的數字:
+            if 標準答案 &lt; pc猜的數字:
+                #print("太大了，再猜一次 :)加油")
+                # 因此已經確定"pc猜的數字"不是答案, 因此 - 1
+                id4 &lt;= "電腦猜的數字:" + str(pc猜的數字) + " 太大了!" + html.BR()
+                上限 = pc猜的數字 - 1
+            else:
+                #print("太小了，再猜一次 :)加油")
+                # 因此已經確定"pc猜的數字"不是答案, 因此 + 1
+                id4 &lt;= "電腦猜的數字:" + str(pc猜的數字) + " 太小了!" + html.BR()
+                下限 = pc猜的數字 + 1
+            #pc猜的數字 = int(input("請輸入您所猜的整數:"))
+            pc猜的數字 = random.randint(下限, 上限)
+            猜測次數 += 1
+
+        #print("猜對了！總共猜了", 猜測次數, "次")
+        id4 &lt;= "電腦猜對了, 答案為: " + str(標準答案) + ", 總共猜了 "+ str(猜測次數) + "次" + html.BR()
+        總猜測次數 += 猜測次數
+    平均猜測次數 = int(總猜測次數/執行次數)
+    #print("平均次數", 平均猜測次數)
+    id4 &lt;= "平均次數: " + str(平均猜測次數)
+
+document["but4"].bind("click", autoguess)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="but4"&gt;利用程式玩猜數字&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W16 新年快樂</title><link href="./w16-xin-nian-kuai-le.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-30:./w16-xin-nian-kuai-le.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
 
 
 &lt;p&gt;首先了解random亂數模組的用法&lt;/p&gt;
@@ -43,6 +139,7 @@ document["but1"].bind("click",lottery)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="but1"&gt;來按阿&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;因為上述程式可能會產生相同的號碼, 改用 random.sample(), 使其產生六個不同的整數!!&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document
 from browser import html
