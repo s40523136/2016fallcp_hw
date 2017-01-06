@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-01-06T14:21:47-00:00</lastmod>
+<lastmod>2017-01-06T15:46:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-01-06T14:21:47-00:00</lastmod>
+<lastmod>2017-01-06T15:46:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-01-06T14:21:47-00:00</lastmod>
+<lastmod>2017-01-06T15:46:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-01-06T14:21:47-00:00</lastmod>
+<lastmod>2017-01-06T15:46:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -158,13 +158,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/yuan-duan-zi-liao.html</loc>
-<lastmod>2016-10-10T12:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./tag/jin-duan-zi-liao.html</loc>
 <lastmod>2016-10-20T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -181,6 +174,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./tag/brython.html</loc>
 <lastmod>2017-01-06T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/yuan-duan-zi-liao.html</loc>
+<lastmod>2016-10-10T12:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
