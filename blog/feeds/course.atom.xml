@@ -552,7 +552,7 @@ for s in mylist:
     num = num + 1
 &lt;/script&gt;
 
-&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖練習</title><link href="./w10-brython-hui-tu-lian-xi.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-14:./w10-brython-hui-tu-lian-xi.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
+&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖練習</title><link href="./w10-brython-hui-tu-lian-xi.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-11-14:./w10-brython-hui-tu-lian-xi.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
