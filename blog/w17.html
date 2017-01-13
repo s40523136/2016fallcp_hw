@@ -170,13 +170,13 @@ init_mathjax();
 
         <meta name="author" content="黃胤瑋" />
         <meta name="keywords" content="Brython" />
-        <meta name="description" content="window.onload=function(){ brython(1); } from browser import document from browser import window from browser import timer import math canvas = document[&#34;onebar&#34;] ctx = canvas.getContext(&#34;2d&#34;) width = canvas.width height = canvas.height # 畫圓函式 def circle(x,y,r): ctx.beginPath() ctx.arc(x, y, r, 0, math.pi*2, True ..." />
+        <meta name="description" content="心得:利用畫線加上轉圈 來製作四連桿機構 window.onload=function(){ brython(1); } from browser import document from browser import window from browser import timer import math canvas = document[&#34;onebar&#34;] ctx = canvas.getContext(&#34;2d&#34;) width = canvas.width height = canvas.height # 畫圓函式 def circle(x,y,r): ctx.beginPath() ctx.arc(x, y, r, 0, math ..." />
 
         <meta property="og:site_name" content="2016Fall 課程網誌 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="W17"/>
         <meta property="og:url" content="./w17.html"/>
-        <meta property="og:description" content="window.onload=function(){ brython(1); } from browser import document from browser import window from browser import timer import math canvas = document[&#34;onebar&#34;] ctx = canvas.getContext(&#34;2d&#34;) width = canvas.width height = canvas.height # 畫圓函式 def circle(x,y,r): ctx.beginPath() ctx.arc(x, y, r, 0, math.pi*2, True ..."/>
+        <meta property="og:description" content="心得:利用畫線加上轉圈 來製作四連桿機構 window.onload=function(){ brython(1); } from browser import document from browser import window from browser import timer import math canvas = document[&#34;onebar&#34;] ctx = canvas.getContext(&#34;2d&#34;) width = canvas.width height = canvas.height # 畫圓函式 def circle(x,y,r): ctx.beginPath() ctx.arc(x, y, r, 0, math ..."/>
         <meta property="article:published_time" content="2017-01-06" />
             <meta property="article:section" content="Course" />
             <meta property="article:tag" content="Brython" />
@@ -315,7 +315,8 @@ init_mathjax();
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <!-- 導入 Brython 標準程式庫 -->
+                <p>心得:利用畫線加上轉圈 來製作四連桿機構</p>
+<!-- 導入 Brython 標準程式庫 -->
 
 <script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
 </script>
@@ -391,8 +392,8 @@ def animate():
     y2 = y1 + 50*math.sin(10*theta*deg)
     line(x1, y1, x2, y2)
      # 再加一條小線段
-    x3 = x2 + 50*math.sin(20*theta*deg) 
-    y3 = y2 + 50*math.sin(20*theta*deg)
+    x3 = x2 + 50*math.sin(5*theta*deg) 
+    y3 = y2 + 50*math.sin(5*theta*deg)
     line(x2, y2, x3, y3)
     x4 = x3 
     y4 = y3 

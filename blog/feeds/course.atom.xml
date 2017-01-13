@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2017-01-06T12:00:00+08:00</updated><entry><title>W17</title><link href="./w17.html" rel="alternate"></link><published>2017-01-06T12:00:00+08:00</published><updated>2017-01-06T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2017-01-06:./w17.html</id><summary type="html">&lt;!-- 導入 Brython 標準程式庫 --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2017-01-06T12:00:00+08:00</updated><entry><title>W17</title><link href="./w17.html" rel="alternate"></link><published>2017-01-06T12:00:00+08:00</published><updated>2017-01-06T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2017-01-06:./w17.html</id><summary type="html">&lt;p&gt;心得:利用畫線加上轉圈 來製作四連桿機構&lt;/p&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
 &lt;/script&gt;
@@ -75,8 +76,8 @@ def animate():
     y2 = y1 + 50*math.sin(10*theta*deg)
     line(x1, y1, x2, y2)
      # 再加一條小線段
-    x3 = x2 + 50*math.sin(20*theta*deg) 
-    y3 = y2 + 50*math.sin(20*theta*deg)
+    x3 = x2 + 50*math.sin(5*theta*deg) 
+    y3 = y2 + 50*math.sin(5*theta*deg)
     line(x2, y2, x3, y3)
     x4 = x3 
     y4 = y3 
@@ -119,7 +120,8 @@ for i in range(36):
 '''
 
 
-&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W16 新年快樂之小遊戲</title><link href="./w16-xin-nian-kuai-le-zhi-xiao-you-xi.html" rel="alternate"></link><published>2016-12-31T12:00:00+08:00</published><updated>2016-12-31T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-31:./w16-xin-nian-kuai-le-zhi-xiao-you-xi.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
+&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W16 新年快樂之小遊戲</title><link href="./w16-xin-nian-kuai-le-zhi-xiao-you-xi.html" rel="alternate"></link><published>2016-12-31T12:00:00+08:00</published><updated>2016-12-31T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-31:./w16-xin-nian-kuai-le-zhi-xiao-you-xi.html</id><summary type="html">&lt;p&gt;心得:利用之前所學製作(W15)製作比大小遊戲&lt;/p&gt;
+&lt;p&gt;2017年元旦快樂&lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -216,6 +218,7 @@ document["but4"].bind("click", autoguess)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="but4"&gt;利用程式玩猜數字&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W16 新年快樂</title><link href="./w16-xin-nian-kuai-le.html" rel="alternate"></link><published>2016-12-30T12:00:00+08:00</published><updated>2016-12-30T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-30:./w16-xin-nian-kuai-le.html</id><summary type="html">&lt;p&gt;2017年元旦快樂&lt;/p&gt;
+&lt;p&gt;心得:利用之前所學製作樂透隨機選號&lt;/p&gt;
 
 
 &lt;p&gt;首先了解random亂數模組的用法&lt;/p&gt;
@@ -275,7 +278,8 @@ def lottery(e):
 document["but2"].bind("click", lottery)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="but2"&gt;恭喜中獎&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W15 耶誕快樂</title><link href="./w15-ye-dan-kuai-le.html" rel="alternate"></link><published>2016-12-23T12:00:00+08:00</published><updated>2016-12-23T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-23:./w15-ye-dan-kuai-le.html</id><summary type="html">&lt;!-- 導入 Brython 標準程式庫 --&gt;
+&lt;p&gt;&lt;button id="but2"&gt;恭喜中獎&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W15 耶誕快樂</title><link href="./w15-ye-dan-kuai-le.html" rel="alternate"></link><published>2016-12-23T12:00:00+08:00</published><updated>2016-12-23T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-23:./w15-ye-dan-kuai-le.html</id><summary type="html">&lt;p&gt;心得:輸入數字比大小&lt;/p&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -339,7 +343,8 @@ for i in range(5):
 do["b1"].bind("click", compa)
 &lt;/script&gt;
 &lt;button id="b1"&gt;compa&lt;/button&gt;
-&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>CP W14 練習</title><link href="./cp-w14-lian-xi.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-16:./cp-w14-lian-xi.html</id><summary type="html">&lt;!-- 導入 Brython 標準程式庫 --&gt;
+&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>CP W14 練習</title><link href="./cp-w14-lian-xi.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-16:./cp-w14-lian-xi.html</id><summary type="html">&lt;p&gt;心得:製作按鈕後輸入等於輸出&lt;/p&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -423,7 +428,8 @@ container &lt;= mystring
 &lt;p&gt;開始進行範例分配&lt;/p&gt;
 &lt;p&gt;接受使用者輸入&lt;/p&gt;
 &lt;p&gt;利用aler()顯示結果&lt;/p&gt;
-&lt;p&gt;直接列印結果&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W13 練習-2</title><link href="./w13-lian-xi-2.html" rel="alternate"></link><published>2016-12-09T12:00:00+08:00</published><updated>2016-12-09T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-09:./w13-lian-xi-2.html</id><summary type="html">&lt;p&gt;將&lt;a herf="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;
+&lt;p&gt;直接列印結果&lt;/p&gt;
+&lt;p&gt;心得:迴圈的應用&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W13 練習-2</title><link href="./w13-lian-xi-2.html" rel="alternate"></link><published>2016-12-09T12:00:00+08:00</published><updated>2016-12-09T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-09:./w13-lian-xi-2.html</id><summary type="html">&lt;p&gt;將&lt;a herf="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;
 http://mde.tw/2016fallcp/course/Python3Programs.txt&lt;/a&gt; 整理成brython
 練習:編寫一個可以將適用者輸入的攝氏溫度,轉為華氏溫度&lt;/p&gt;
 
@@ -460,7 +466,8 @@ container &lt;= output_string
 &lt;p&gt;開始進行範例分配&lt;/p&gt;
 &lt;p&gt;接受使用者輸入&lt;/p&gt;
 &lt;p&gt;利用aler()顯示結果&lt;/p&gt;
-&lt;p&gt;直接列印結果&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W12 Brython 繪圖練習</title><link href="./w12-brython-hui-tu-lian-xi.html" rel="alternate"></link><published>2016-12-02T12:00:00+08:00</published><updated>2016-12-02T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-02:./w12-brython-hui-tu-lian-xi.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
+&lt;p&gt;直接列印結果&lt;/p&gt;
+&lt;p&gt;心得:迴圈的應用加上按鈕及溫度轉換&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W12 Brython 繪圖練習</title><link href="./w12-brython-hui-tu-lian-xi.html" rel="alternate"></link><published>2016-12-02T12:00:00+08:00</published><updated>2016-12-02T12:00:00+08:00</updated><author><name>黃胤瑋</name></author><id>tag:,2016-12-02:./w12-brython-hui-tu-lian-xi.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
@@ -721,4 +728,6 @@ ctx.strokeStyle = "blue"
 ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
-&lt;/pre&gt;</summary><category term="Brython"></category></entry></feed>
+&lt;/pre&gt;
+
+&lt;p&gt;心得:利用browser畫直線   用點的定位道點的定位畫線 再用迴圈讓線變多條&lt;/p&gt;</summary><category term="Brython"></category></entry></feed>
